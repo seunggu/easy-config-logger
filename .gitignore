@@ -1,0 +1,16 @@
+# packages
+node_modules
+
+# logs
+logs
+*.log
+
+# IDE
+.idea
+.vscode
+
+# test
+.nyc_output
+
+# build
+lib
