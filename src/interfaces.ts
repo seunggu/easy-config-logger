@@ -3,9 +3,9 @@
  */
 
 /**
-* Option Interface
-*/
-interface Option {
+ * Option Interface
+ */
+interface IOption {
   level: string;
   env: string;
 }
@@ -13,8 +13,8 @@ interface Option {
 /**
  * Meta Interface
  */
-interface Meta {
-  [key: string]: any;
+interface IMeta {
+  [key: string]: number|string|Date|object;
 }
 
-export { Option, Meta };
+export { IOption, IMeta };
