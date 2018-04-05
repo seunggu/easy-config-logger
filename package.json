@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "easy-config-logger is the logger with easy configuration. It is designed for both readability in development and json output in production.",
   "main": "lib/index",
+  "types": "lib/index",
   "scripts": {
+    "build": "tsc",
     "lint": "tslint -p tsconfig.json 'src/**/*.ts'",
     "test": "mocha --require ts-node/register 'src/test.setup.ts' 'src/**/*.spec.ts'"
   },
