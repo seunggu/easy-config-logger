@@ -7,7 +7,8 @@
   "scripts": {
     "build": "tsc",
     "lint": "tslint -p tsconfig.json 'src/**/*.ts'",
-    "test": "mocha --require ts-node/register 'src/test.setup.ts' 'src/**/*.spec.ts'"
+    "test": "mocha --require ts-node/register 'src/test.setup.ts' 'src/**/*.spec.ts'",
+    "publish": "npm run lint && npm run test && npm run build && np"
   },
   "repository": {
     "type": "git",
@@ -15,11 +16,13 @@
   },
   "keywords": [
     "logger",
+    "log",
     "easy",
-    "json"
+    "json",
+    "winston"
   ],
   "author": "seunggu <imaster0209@naver.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/seunggu/easy-config-logger/issues"
   },
@@ -34,6 +37,7 @@
     "chai": "^4.1.2",
     "mocha": "^5.0.5",
     "nodemon": "^1.17.3",
+    "np": "^2.20.1",
     "sinon": "^4.5.0",
     "std-mocks": "^1.0.1",
     "ts-node": "^5.0.1",
