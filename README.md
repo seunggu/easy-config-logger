@@ -1,8 +1,10 @@
 # easy-config-logger
 
-> easy-config-logger is the logger with easy configuration. It is designed for both > readability in development and json output in production.
+> Typescript Support!
 
-<br><br>
+easy-config-logger is the logger with easy configuration. It is designed for both > readability in development and json output in production.
+
+<br>
 
 ## Usage
 
@@ -128,6 +130,8 @@ logger.error('error message', { some_meta: 'some meta' });
 ```javascript
 logger.test('test message', { some_meta: 'some meta' });
 ```
+
+<br><br>
 
 ## License
 License under the MIT License (MIT)
