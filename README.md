@@ -2,6 +2,8 @@
 
 > easy-config-logger is the logger with easy configuration. It is designed for both > readability in development and json output in production.
 
+<br><br>
+
 ## Usage
 
 ### `development`, `test` env
@@ -24,6 +26,8 @@ logger.info('test logging', testMeta);
 #### result
 ![test1](./img/test1.png)
 
+<br>
+
 ### `stage`, `production` env
 
 > When prod env, logger print log as json format string.
@@ -44,6 +48,8 @@ logger.info('test logging', testMeta);
 #### result
 ![test2](./img/test2.png)
 
+<br><br>
+
 ## Configuration
 
 ### Options
@@ -58,7 +64,7 @@ logger.info('test logging', testMeta);
 
 #### Options.level
 
-**Support Level**
+##### Support Level
 
 | level | description |
 | --- | --- |
@@ -69,14 +75,16 @@ logger.info('test logging', testMeta);
 | `test` | for testing. |
 
 
-**Level Order**
+##### Level Order
 
 `debug` < `info` < `warn` < `warn` < `test` 
 
-
+<br>
 
 ### Base Meta
 > meta data that always included in log.
+
+<br><br>
 
 ## API
 
