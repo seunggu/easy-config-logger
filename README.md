@@ -52,6 +52,15 @@ logger.info('test logging', testMeta);
 
 <br><br>
 
+## Table of Content
+
+* [Configuration](#configuration)
+	* [Options](#options)
+	* [Base Meta](#base-meta)
+* [API](#API)
+
+<br>
+
 ## Configuration
 
 ### Options
