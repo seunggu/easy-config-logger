@@ -98,7 +98,7 @@ class Logger {
     }
 
     if (!envs.includes(env)) {
-      throw new Error(`Environment '${level}' is not available`);
+      throw new Error(`Environment '${env}' is not available`);
     }
   }
 
