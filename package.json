@@ -1,6 +1,6 @@
 {
   "name": "easy-config-logger",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "easy-config-logger is the logger with easy configuration. It is designed for both readability in development and json output in production.",
   "main": "lib/index",
   "types": "lib/index",
