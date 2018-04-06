@@ -47,6 +47,14 @@ describe('logger', () => {
 
         expect(stdMocks.flush().stderr.length).to.equal(0);
       });
+
+      it('should occur error when it receive unsupport level', () => {
+        const wrongLevel: string = 'wrong level';
+        const options: IOption = { env: 'development', level: wrongLevel };
+        const errMsg: string = `Log Level '${wrongLevel}' is not available`;
+
+        expect(() => new Logger(options)).to.throw().with.property('message', errMsg);
+      });
     });
 
     describe('options.env', () => {
@@ -98,6 +106,14 @@ describe('logger', () => {
         const result: object = { level: 'debug', message, timestamp: new Date() };
         const resultMessage: string = `${JSON.stringify(result)}\n`;
         expect(stdMocks.flush().stderr[0]).to.equal(resultMessage);
+      });
+
+      it('should occur error when it receive unsupport env', () => {
+        const wrongEnv: string = 'wrong env';
+        const options: IOption = { env: wrongEnv, level: 'debug' };
+        const errMsg: string = `Environment '${wrongEnv}' is not available`;
+
+        expect(() => new Logger(options)).to.throw().with.property('message', errMsg);
       });
     });
 
