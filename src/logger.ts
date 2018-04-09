@@ -121,4 +121,4 @@ class Logger {
   }
 }
 
-export { Logger };
+export { Logger, IMeta, IOption };
