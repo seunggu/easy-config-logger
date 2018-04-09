@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "tslint -p tsconfig.json 'src/**/*.ts'",
-    "test": "mocha --require ts-node/register 'src/test.setup.ts' 'src/**/*.spec.ts'",
+    "test": "mocha -r ts-node/register 'src/test.setup.ts' 'src/**/*.spec.ts'",
     "release": "npm run lint && npm run test && npm run build && np"
   },
   "repository": {
